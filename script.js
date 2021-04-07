@@ -15,7 +15,8 @@ function compute()
             "You will receive an amount of " + targetamount + ",<br>" +
             "in the year " + targetyear + ".";
     } else {
-        document.getElementById('result').innerHTML = "Invalid Amount."
+        document.getElementById('result').innerHTML = "Invalid Amount. Enter positive number."
+        alert("Enter positive number.");
     }
 }
 
