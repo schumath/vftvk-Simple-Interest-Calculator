@@ -2,6 +2,7 @@ function compute()
 {
     var amount = document.getElementById("amount").value
     var rate = +document.getElementById("rate").value;
+    rate = (Math.round(rate * 100) / 100).toFixed(1);
     var years = +document.getElementById("years").value;
     var thisyear = 2021;
     var targetyear = years + thisyear;
@@ -24,6 +25,7 @@ window.onload = function () {
     
 function updateSlider() {
     var rate = document.getElementById("rate").value 
+    rate = (Math.round(rate * 100) / 100).toFixed(1);
     document.getElementById('output').innerHTML = rate
 
 }
