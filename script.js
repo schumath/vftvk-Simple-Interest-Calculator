@@ -17,6 +17,8 @@ function compute()
     } else {
         document.getElementById('result').innerHTML = "Invalid Amount. Enter positive number."
         alert("Enter positive number.");
+        document.getElementById("amount").focus();
+        document.getElementById("amount").select();
     }
 }
 
