@@ -10,10 +10,10 @@ function compute()
     
     if (amount > 0) {
         document.getElementById('result').innerHTML = 
-            "If you deposit " + amount + " <br>" +
-            "at an interest rate of " + rate + "%.<br>" +
-            "You will receive an amount of " + targetamount + ",<br>" +
-            "in the year " + targetyear + ".";
+            "If you deposit <span id=\"yellowback\">" + amount + "</span> <br>" +
+            "at an interest rate of <span id=\"yellowback\">" + rate + "%</span>.<br>" +
+            "You will receive an amount of <span id=\"yellowback\">" + targetamount + "</span>,<br>" +
+            "in the year <span id =\"yellowback\">" + targetyear + "</span>";
     } else {
         document.getElementById('result').innerHTML = "Invalid Amount. Enter positive number."
         alert("Enter positive number.");
