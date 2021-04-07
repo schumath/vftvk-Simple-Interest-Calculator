@@ -22,7 +22,10 @@ input {
   font-family: Arial, Helvetica, sans-serif;
 }
 input[type="range"] {
-  width: 200px;
+  width: 190px;
+}
+input[type="number"] {
+  width: 190px;
 }
 button {
   font-size: medium;
